@@ -23,6 +23,22 @@ Route::get('/blog', function () {
     return view('blog');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+});
+
+Route::get('/testlang', function () {
+    return view('testlang');
+});
+
 Route::get('/listing/{category}/{layout}', [PageController::class,'viewListing']);
 
 //tourist register

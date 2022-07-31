@@ -9,11 +9,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	 <!--=============== FAVICON ===============-->
+	 <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+
 	<!-- CSS
 	================================================== -->
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/main-color.css" id="colors">
     <link rel="stylesheet" href="/toast/toastr.min.css" id="colors">
+	<link rel="stylesheet" href="/css/testlang.css">
 
 </head>
 
@@ -35,7 +39,7 @@
 				
 				<!-- Logo -->
 				<div id="logo">
-					<a href="#"><img src="/images/logo.png" alt=""><b>HELAVIEW</b></a>
+					<a href="{{url('/')}}"><img src="/images/logo.png" alt=""><b>HELAVIEW</b></a>
                     
 				</div>
 
@@ -64,35 +68,56 @@
                                 <li><a href="{{url('/listing/eat & drink/list')}}">Eat & Drink</a>
 									
 								</li>
-								<li><a href="{{url('/list-layout')}}">Shops </a>
+								<li><a href="{{url('/listing/Shops/list')}}">Shops </a>
 									
 								</li>
-								<li><a href="{{url('/list-layout')}}">Hotels</a>
+								<li><a href="{{url('/listing/hotels/list')}}">Hotels</a>
 									
 								</li>
-								<li><a href="{{url('/list-layout')}}">Restaurant</a>
+								<li><a href="{{url('/listing/Restaurant/list')}}">Restaurant</a>
 									
 								</li>
-								<li><a href="{{url('/list-layout')}}">Fitness</a>
+								<li><a href="{{url('/listing/Fitness/list')}}">Fitness</a>
 									
 								</li>
-                                <li><a href="{{url('/list-layout')}}">events</a>
+                                <li><a href="{{url('/listing/events/list')}}">events</a>
 									
 								</li>
-                                <li><a href="{{url('/list-layout')}}">other</a>
+                                <li><a href="{{url('/listing/other/list')}}">other</a>
 									
 								</li>
 							</ul>
 						</li>
 
-						<li><a href="#">About us</a>
+						<li><a href="{{('/about')}}">About</a>
 							
 						</li>
 
-						<li><a href="#" >Contact us</a>
+						<li><a href="{{('/contact')}}" >Contact</a>
 							
 						</li>
 						
+						<li><a href="#" > <img src="/images/language.png" height="15px" width="15px"> </a>
+							<ul>
+								<li><a href="#" onclick="doGTranslate('en|en');return false;" title="English" class="gflag nturl" style="background-position:-0px -0px;">English</a>
+
+								</li>
+								<li><a href="#" onclick="doGTranslate('en|fr');return false;" title="French" class="gflag nturl" style="background-position:-200px -100px;">French</a>
+									
+								</li>								
+                                <li><a href="#" onclick="doGTranslate('en|de');return false;" title="German" class="gflag nturl" style="background-position:-300px -100px;">German</a>
+																
+								</li>
+								<li><a href="#" onclick="doGTranslate('en|es');return false;" title="Spanish" class="gflag nturl" style="background-position:-600px -200px;">Spanish</a>
+									
+								</li>	
+								<li><a href="#" onclick="doGTranslate('en|ta');return false;" title="Spanish" class="gflag nturl" style="background-position:-600px -200px;">Tamil</a>
+									
+								</li>							
+															
+
+							</ul>
+						</li> 
 					</ul>
 				</nav>
 				<div class="clearfix"></div>
@@ -121,10 +146,12 @@
                     @endif
                     
 
-					<a href="dashboard-add-listing.html" class="button border with-icon">Add Listing <i class="sl sl-icon-plus"></i></a>
+					<a href="dashboard-add-listing.html" class="button border with-icon">Become a host</span> <i class="sl sl-icon-plus"></i></a>
+				
 				</div>
 			</div>
 			<!-- Right Side Content / End -->
+		
 
 			<!-- Sign In Popup -->
 			<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
@@ -216,10 +243,13 @@
 					</div>
 				</div>
 			</div>
-			<!-- Sign In Popup / End -->
+			<!-- Sign In Popup / End -->	
+				
 
 
 		</div>
+
+		
 	</div>
 	<!-- Header / End -->
 
@@ -238,7 +268,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5 col-sm-6">
-				<img class="footer-logo" src="/images/logo.png" alt="" ><b>HELAVIEW</b>
+				<a href="{{('#')}}"><img class="footer-logo" src="/images/logo.png" alt=""  ><b>HELAVIEW</b></a>
 				<br><br>
 				<p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
 			</div>
@@ -249,16 +279,16 @@
 					<li><a href="#">Login</a></li>
 					<li><a href="#">Sign Up</a></li>
 					<li><a href="#">My Account</a></li>
-					<li><a href="#">Add Listing</a></li>					
-					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Become a Host</a></li>					
+					<li><a href="{{('/privacy-policy')}}">Privacy Policy</a></li>
 				</ul>
 
 				<ul class="footer-links">
 					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Blog</a></li>
+					<li><a href="{{('/blog')}}">Blog</a></li>
 					<li><a href="#">Our Partners</a></li>
 					<li><a href="#">How It Works</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="{{('/contact')}}">Contact</a></li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>		
@@ -285,7 +315,7 @@
 		<!-- Copyright -->
 		<div class="row">
 			<div class="col-md-12">
-				<div class="copyrights">© 2021 HELAVIEW. All Rights Reserved.</div>
+				<div class="copyrights">© 2021 HELAVIEW.</div>
 			</div>
 		</div>
 
@@ -347,6 +377,7 @@ strings: ["Attractions"," Restaurants"," Hotels"],
 	loop: true,
 	showCursor: true
 });
+
 </script>
 
 
@@ -415,6 +446,20 @@ toastr.options = {
 </script>
 <!--Chat feature - Tidio-->
 <script src="//code.tidio.co/mjsywqny9d9dawu5yaoojp3keyl8klfr.js" async></script>
+<!--gtranslate-->
+
+<div id="google_translate_element2"></div>
+<script type="text/javascript">
+function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en',autoDisplay: false}, 'google_translate_element2');}
+</script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
+/* ]]> */
+</script>
+
 
 </body>
 
