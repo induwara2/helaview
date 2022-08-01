@@ -57,25 +57,25 @@
 					  
 					<div class="highlighted-categories">
 						<!-- Box -->
-						<a href="{{url('/list-layout')}}" class="highlighted-category">
+						<a href="{{url('/listing/hotels/list')}}" class="highlighted-category">
 					    	<i class="im im-icon-Home"></i>
 					    	<h4>Hotels</h4>
 						</a>	
 
 						<!-- Box -->
-						<a href="{{url('/list-layout')}}" class="highlighted-category">
+						<a href="{{url('/listing/eat & drink/list')}}" class="highlighted-category">
 					    	<i class="im im-icon-Hamburger"></i>
 					    	<h4>Eat &amp; Drink</h4>
 						</a>	
 
 						<!-- Box -->
-						<a href="{{url('/list-layout')}}" class="highlighted-category">
+						<a href="{{url('/listing/events/list')}}" class="highlighted-category">
 					    	<i class="im im-icon-Electric-Guitar"></i>
 					    	<h4>Events</h4>
 						</a>	
 
 						<!-- Box -->
-						<a href="{{url('/list-layout')}}" class="highlighted-category">
+						<a href="{{url('/listing/fitness/list')}}" class="highlighted-category">
 					    	<i class="im im-icon-Dumbbell"></i>
 					    	<h4>Fitness</h4>
 						</a>		

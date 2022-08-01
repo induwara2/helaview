@@ -177,8 +177,8 @@
 								<div class="listing-badge now-open">Now Open</div>
 
 								<div class="listing-item-inner">
-									<h3>Tom's Restaurant <i class="verified-icon"></i></h3>
-									<span>964 School Street, New York</span>
+									<h3>The Gallery Café<i class="verified-icon"></i></h3>
+									<span>65 Rosmead place, Colombo 07</span>
 									<div class="star-rating" data-rating="3.5">
 										<div class="rating-counter">(12 reviews)</div>
 									</div>
@@ -206,8 +206,8 @@
 							<div class="listing-item-content">
 
 								<div class="listing-item-inner">
-								<h3>Sticky Band</h3>
-								<span>Bishop Avenue, New York</span>
+								<h3>Tantalize 2022</h3>
+								<span>110 Ananda Coomaraswamy Mawatha, Colombo 07</span>
 									<div class="star-rating" data-rating="5.0">
 										<div class="rating-counter">(23 reviews)</div>
 									</div>
@@ -215,7 +215,7 @@
 
 								<span class="like-icon"></span>
 
-								<div class="listing-item-details">Friday, August 10</div>
+								<div class="listing-item-details">Friday, November 25 </div>
 							</div>
 						</a>
 					</div>
@@ -237,8 +237,8 @@
 							<div class="listing-item-content">
 
 								<div class="listing-item-inner">
-								<h3>Hotel Govendor</h3>
-								<span>778 Country Street, New York</span>
+								<h3>The Kingsbury </h3>
+								<span>48 Janadhipathi Mawatha, Colombo 01</span>
 									<div class="star-rating" data-rating="2.0">
 										<div class="rating-counter">(17 reviews)</div>
 									</div>
@@ -269,8 +269,8 @@
 								<div class="listing-badge now-open">Now Open</div>
 								
 								<div class="listing-item-inner">
-								<h3>Burger House <i class="verified-icon"></i></h3>
-								<span>2726 Shinn Street, New York</span>
+								<h3>Hotel De Pilawoos <i class="verified-icon"></i></h3>
+								<span>Chatham Street 100, Colombo 03</span>
 									<div class="star-rating" data-rating="5.0">
 										<div class="rating-counter">(31 reviews)</div>
 									</div>
@@ -298,8 +298,8 @@
 							<div class="listing-item-content">
 
 								<div class="listing-item-inner">
-								<h3>Airport</h3>
-								<span>1512 Duncan Avenue, New York</span>
+								<h3>Surfing</h3>
+								<span>Weilgama</span>
 									<div class="star-rating" data-rating="3.5">
 										<div class="rating-counter">(46 reviews)</div>
 									</div>
@@ -328,8 +328,8 @@
 								<div class="listing-badge now-closed">Now Closed</div>
 
 								<div class="listing-item-inner">
-								<h3>Think Coffee</h3>
-								<span>215 Terry Lane, New York</span>
+								<h3>Upali's by Nawaloka</h3>
+								<span>65 Dr CWW Kannangara Mawatha, Colombo 07</span>
 									<div class="star-rating" data-rating="5.0">
 										<div class="rating-counter">(31 reviews)</div>
 									</div>
