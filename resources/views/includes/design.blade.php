@@ -133,7 +133,7 @@
                     @if(Auth::guard('web')->check())
                         <!-- User Menu -->
                         <div class="user-menu">
-                            <div class="user-name"><span><img src="images/dashboard-avatar.jpg" alt=""></span>Hi, {{  Auth::user('web')->name }}!</div>
+                            <div class="user-name"><span><img src="\images\dashboard-avatar.jpg" alt=""></span>Hi, {{  Auth::user('web')->name }}!</div>
                             <ul>
                                 <li><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
                                 <li><a href="dashboard-messages.html"><i class="sl sl-icon-envelope-open"></i> Messages</a></li>
