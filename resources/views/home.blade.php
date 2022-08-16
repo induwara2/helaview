@@ -16,7 +16,7 @@
 							<!-- Typed words can be configured in script settings at the bottom of this HTML file -->
 							<span class="typed-words"></span>
 						</h2>
-						<h4>Expolore top-rated attractions, activities and more</h4>
+						<h4>Expolore ougfhfh top-rated attractions, activities and more</h4>
 					</div>
 
 					<div class="main-search-input">
