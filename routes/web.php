@@ -57,3 +57,15 @@ Route::get('/logout', [UserController::class,'logout']);
 // Route::get('/grid-layout', function () {
 //     return view('grid-layout');
 // });
+
+//hotel register / login
+Route::get('/hotellogin', function () {
+    return view('hotellogin');
+});
+Route::get('/about', function () {
+    return view('about');
+});
+//user dashboard
+Route::get('/user', function () {
+    return view('user');
+});
