@@ -260,69 +260,12 @@
 
 @yield('body')
 
-
-<!-- Footer
-================================================== -->
-<div id="footer" class="sticky-footer">
-	<!-- Main -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5 col-sm-6">
-				<a href="{{('#')}}"><img class="footer-logo" src="/images/logo.png" alt=""  ><b>HELAVIEW</b></a>
-				<br><br>
-				<p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
-			</div>
-
-			<div class="col-md-4 col-sm-6 ">
-				<h4>Helpful Links</h4>
-				<ul class="footer-links">
-					<li><a href="#">Login</a></li>
-					<li><a href="#">Sign Up</a></li>
-					<li><a href="#">My Account</a></li>
-					<li><a href="#">Become a Host</a></li>					
-					<li><a href="{{('/privacy-policy')}}">Privacy Policy</a></li>
-				</ul>
-
-				<ul class="footer-links">
-					<li><a href="#">FAQ</a></li>
-					<li><a href="{{('/blog')}}">Blog</a></li>
-					<li><a href="#">Our Partners</a></li>
-					<li><a href="#">How It Works</a></li>
-					<li><a href="{{('/contact')}}">Contact</a></li>
-				</ul>
-				<div class="clearfix"></div>
-			</div>		
-
-			<div class="col-md-3  col-sm-12">
-				<h4>Contact Us</h4>
-				<div class="text-widget">
-					<span>No.388 Union Place, Colombo 02</span> <br>
-					Phone: <span>(112) 124-457 </span><br>
-					E-Mail:<span> <a href="#">info@helaview.com</a> </span><br>
-				</div>
-
-				<ul class="social-icons margin-top-20">
-					<li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
-					<li><a class="twitter" href="#"><i class="icon-twitter"></i></a></li>
-					<li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
-					<li><a class="vimeo" href="#"><i class="icon-vimeo"></i></a></li>
-				</ul>
-
-			</div>
-
-		</div>
-		
-		<!-- Copyright -->
-		<div class="row">
-			<div class="col-md-12">
-				<div class="copyrights">© 2021 HELAVIEW.</div>
-			</div>
-		</div>
-
-	</div>
-
+<!-- Copyrights -->
+<div class="col-md-12">
+    <div class="copyrights">© 2021 Listeo. All Rights Reserved.</div>
 </div>
-<!-- Footer / End -->
+
+
 
 
 <!-- Back To Top Button -->
@@ -348,117 +291,6 @@
 <script type="text/javascript" src="/scripts/tooltips.min.js"></script>
 <script type="text/javascript" src="/scripts/custom.js"></script>
 
-
-<!-- Leaflet // Docs: https://leafletjs.com/ -->
-<script src="/scripts/leaflet.min.js"></script>
-
-<!-- Leaflet Maps Scripts -->
-<script src="/scripts/leaflet-markercluster.min.js"></script>
-<script src="/scripts/leaflet-gesture-handling.min.js"></script>
-<script src="/scripts/leaflet-listeo.js"></script>
-
-<!-- Leaflet Geocoder + Search Autocomplete // Docs: https://github.com/perliedman/leaflet-control-geocoder -->
-<script src="/scripts/leaflet-autocomplete.js"></script>
-<script src="/scripts/leaflet-control-geocoder.js"></script>
-
-<script src="/toast/toastr.min.js"></script>
-
-
-
-<!-- Typed Script -->
-<script type="text/javascript" src="/scripts/typed.js"></script>
-<script>
-var typed = new Typed('.typed-words', {
-strings: ["Attractions"," Restaurants"," Hotels"],
-	typeSpeed: 80,
-	backSpeed: 80,
-	backDelay: 4000,
-	startDelay: 1000,
-	loop: true,
-	showCursor: true
-});
-
-</script>
-
-
-
-<!-- Home Search Scripts -->
-<script>
-    $(window).on('load', function() { $('.msps-shapes').addClass('shapes-animation'); });
-</script>
- 
-<script src="/scripts/parallax.min.js"></script>
-<script>
-const parent = document.getElementById('scene');
-const parallax = new Parallax(parent, {
-  limitX: 50,
-  limitY: 50,  
-});
- 
- 
-$('.msps-slider').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    speed: 1000,
-    fade: true,
-    cssEase: 'linear'
-});
-
-// toast options
-toastr.options = {
-  "closeButton": true,
-  "debug": false,
-  "newestOnTop": false,
-  "progressBar": true,
-  "positionClass": "toast-top-right",
-  "preventDuplicates": false,
-  "onclick": null,
-  "showDuration": "300",
-  "hideDuration": "1000",
-  "timeOut": "5000",
-  "extendedTimeOut": "1000",
-  "showEasing": "swing",
-  "hideEasing": "linear",
-  "showMethod": "fadeIn",
-  "hideMethod": "fadeOut"
-}
-
-// show session erros
-@if(session()->has('error'))
-    toastr.error('{{ session()->get('error') }}');
-@endif
-
-// show session success messages
-@if(session()->has('success'))
-    toastr.success('{{ session()->get('success') }}');
-@endif
-
-// show form validation errors
-@foreach ($errors->all() as $error)
-    toastr.error('{{ $error }}');
-@endforeach
-
-</script>
-<!--Chat feature - Tidio-->
-<script src="//code.tidio.co/mjsywqny9d9dawu5yaoojp3keyl8klfr.js" async></script>
-<!--gtranslate-->
-
-<div id="google_translate_element2"></div>
-<script type="text/javascript">
-function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en',autoDisplay: false}, 'google_translate_element2');}
-</script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
-
-
-<script type="text/javascript">
-/* <![CDATA[ */
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
-/* ]]> */
-</script>
 
 
 </body>
