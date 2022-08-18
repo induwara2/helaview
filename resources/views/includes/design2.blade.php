@@ -262,7 +262,7 @@
 
 <!-- Copyrights -->
 <div class="col-md-12">
-    <div class="copyrights">© 2021 Listeo. All Rights Reserved.</div>
+    <div class="copyrights">© 2021 HELAVIEW. All Rights Reserved.</div>
 </div>
 
 
