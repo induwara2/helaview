@@ -51,11 +51,11 @@
                   <div class="blog-post">
                      <!-- Img -->
                      <a href="pages-blog-post.html" class="post-img">
-                     <img src="/images/blog-post-02.jpg" alt="">
+                     <img src="/images/blog-compact-post-02.jpg" alt="">
                      </a>
                      <!-- Content -->
                      <div class="post-content">
-                        <h3><a href="pages-blog-post.html">The 50 Greatest Street Arts In London</a></h3>
+                        <h3><a href="pages-blog-post.html">The 50 cheapest Restaurants in colombo</a></h3>
                         <ul class="post-meta">
                            <li>August 18, 2019</li>
                            <li><a href="#">Tips</a></li>
@@ -70,11 +70,11 @@
                   <div class="blog-post">
                      <!-- Img -->
                      <a href="pages-pages-blog-post.html" class="post-img">
-                     <img src="/images/blog-post-03.jpg" alt="">
+                     <img src="/images/blog-compact-post-03.jpg" alt="">
                      </a>
                      <!-- Content -->
                      <div class="post-content">
-                        <h3><a href="pages-pages-blog-post.html">The Best Cofee Shops In Sydney Neighborhoods</a></h3>
+                        <h3><a href="pages-pages-blog-post.html">The Best places to visit in kandy</a></h3>
                         <ul class="post-meta">
                            <li>August 10, 2019</li>
                            <li><a href="#">Tips</a></li>
@@ -147,10 +147,10 @@
                            <li>
                               <div class="widget-content">
                                  <div class="widget-thumb">
-                                    <a href="pages-blog-post.html"><img src="/images/blog-widget-02.jpg" alt=""></a>
+                                    <a href="pages-blog-post.html"><img src="/images/blog-compact-post-02.jpg" alt=""></a>
                                  </div>
                                  <div class="widget-text">
-                                    <h5><a href="pages-blog-post.html">The 50 Greatest Street Arts In London</a></h5>
+                                    <h5><a href="pages-blog-post.html">The 50 cheapest restaurant in colombo</a></h5>
                                     <span>November 9, 2016</span>
                                  </div>
                                  <div class="clearfix"></div>
@@ -160,10 +160,10 @@
                            <li>
                               <div class="widget-content">
                                  <div class="widget-thumb">
-                                    <a href="pages-blog-post.html"><img src="/images/blog-widget-01.jpg" alt=""></a>
+                                    <a href="pages-blog-post.html"><img src="/images/blog-compact-post-03.jpg" alt=""></a>
                                  </div>
                                  <div class="widget-text">
-                                    <h5><a href="pages-blog-post.html">The Best Cofee Shops In Sydney Neighborhoods</a></h5>
+                                    <h5><a href="pages-blog-post.html">The Best places to visit in kandy</a></h5>
                                     <span>November 12, 2016</span>
                                  </div>
                                  <div class="clearfix"></div>
