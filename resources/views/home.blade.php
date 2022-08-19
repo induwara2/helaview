@@ -470,7 +470,7 @@
 			<!-- Blog post Item / End -->
 
 			<div class="col-md-12 centered-content">
-				<a href="pages-blog.html" class="button border margin-top-10">View Blog</a>
+				<a href="{{ url('http://helaview.com/blog') }}" class="button border margin-top-10">View Blog</a>
 			</div>
 
 		</div>
