@@ -387,8 +387,8 @@
 
 			<div class="row">
 				<div class="col-lg-6 col-sm-8">
-					<h2>Streamline Your Business</h2>
-					<p>We’re full-service, local agents who know how to find people and home each together. We use online tools with an unmatched search capability to make you smarter and faster.</p>
+					<h2>Become a host</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat efficitur faucibus. Nulla eget eros quis sapien accumsan feugiat. Sed posuere ac tortor eu sollicitudin. Proin finibus mattis quam,</p>
 					<a href="listings-list-with-sidebar.html" class="button margin-top-25">Get Started</a>
 				</div>
 			</div>
@@ -470,7 +470,7 @@
 			<!-- Blog post Item / End -->
 
 			<div class="col-md-12 centered-content">
-				<a href="pages-blog.html" class="button border margin-top-10">View Blog</a>
+				<a href="/blog" class="button border margin-top-10">View Blog</a>
 			</div>
 
 		</div>
