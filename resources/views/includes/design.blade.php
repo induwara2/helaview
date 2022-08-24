@@ -268,7 +268,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5 col-sm-6">
-				<a href="{{('#')}}"><img class="footer-logo" src="/images/logo.png" alt=""  ><b>HELAVIEW</b></a>
+				<a href="{{('http://127.0.0.1:8000')}}"><img class="footer-logo" src="/images/logo.png" alt=""  ><b>HELAVIEW</b></a>
 				<br><br>
 				<p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
 			</div>
@@ -279,7 +279,7 @@
 					<li><a href="#">Login</a></li>
 					<li><a href="#">Sign Up</a></li>
 					<li><a href="#">My Account</a></li>
-					<li><a href="#">Become a Host</a></li>					
+					<li><a href="/hotellogin">Become a Host</a></li>					
 					<li><a href="{{('/privacy-policy')}}">Privacy Policy</a></li>
 				</ul>
 
@@ -287,7 +287,7 @@
 					<li><a href="#">FAQ</a></li>
 					<li><a href="{{('/blog')}}">Blog</a></li>
 					<li><a href="#">Our Partners</a></li>
-					<li><a href="#">How It Works</a></li>
+					<li><a href="/how">How It Works</a></li>
 					<li><a href="{{('/contact')}}">Contact</a></li>
 				</ul>
 				<div class="clearfix"></div>
