@@ -896,7 +896,7 @@ $(document).ready(function(){
 		var winWidth = $(window).width();
 		var headerHeight = $("#header-container").height(); // height on which the sticky header will shows
 
-		$('.fs-inner-container, .fs-inner-container.map-fixed, #dashboard').css('padding-top', headerHeight);
+		//$('.fs-inner-container, .fs-inner-container.map-fixed, #dashboard').css('padding-top', headerHeight);
 
 		if(winWidth<992) {
 			$('.fs-inner-container.map-fixed').insertBefore('.fs-inner-container.content');

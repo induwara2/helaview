@@ -14332,7 +14332,7 @@ span.like-icon {
 	min-height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 80px;
+	/* padding-top: 80px; */
 }
 
 /* Flexbox Adjustments */
