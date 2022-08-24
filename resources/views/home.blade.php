@@ -387,9 +387,9 @@
 
 			<div class="row">
 				<div class="col-lg-6 col-sm-8">
-					<h2>Become a host</h2>
+					<h2>Join our community</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat efficitur faucibus. Nulla eget eros quis sapien accumsan feugiat. Sed posuere ac tortor eu sollicitudin. Proin finibus mattis quam,</p>
-					<a href="listings-list-with-sidebar.html" class="button margin-top-25">Get Started</a>
+					<a href="listings-list-with-sidebar.html" class="button margin-top-25">Become a host</a>
 				</div>
 			</div>
 

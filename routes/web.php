@@ -69,3 +69,7 @@ Route::get('/about', function () {
 Route::get('/user', function () {
     return view('user');
 });
+//how it works
+Route::get('/how', function () {
+    return view('how');
+});
