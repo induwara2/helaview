@@ -135,7 +135,7 @@
 							<div class="user-menu">
 								<div class="user-name"><span><img src="\images\dashboard-avatar.jpg" alt=""></span>Hi, {{  Auth::user('web')->name }}!</div>
 								<ul>
-									<li><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
+									<li><a href="/user"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
 									<li><a href="dashboard-messages.html"><i class="sl sl-icon-envelope-open"></i> Messages</a></li>
 									<li><a href="dashboard-bookings.html"><i class="fa fa-calendar-check-o"></i> Bookings</a></li>
 									<li><a href="/logout"><i class="sl sl-icon-power"></i> Logout</a></li>
@@ -365,22 +365,7 @@
 <script src="/toast/toastr.min.js"></script>
 
 
-
-<!-- Typed Script -->
-<script type="text/javascript" src="/scripts/typed.js"></script>
-<script>
-var typed = new Typed('.typed-words', {
-strings: ["Attractions"," Restaurants"," Hotels"],
-	typeSpeed: 80,
-	backSpeed: 80,
-	backDelay: 4000,
-	startDelay: 1000,
-	loop: true,
-	showCursor: true
-});
-
-</script>
-
+@yield('script')
 
 
 <!-- Home Search Scripts -->
@@ -388,27 +373,27 @@ strings: ["Attractions"," Restaurants"," Hotels"],
     $(window).on('load', function() { $('.msps-shapes').addClass('shapes-animation'); });
 </script>
  
-<script src="/scripts/parallax.min.js"></script>
+{{-- <script src="/scripts/parallax.min.js"></script> --}}
 <script>
-const parent = document.getElementById('scene');
-const parallax = new Parallax(parent, {
-  limitX: 50,
-  limitY: 50,  
-});
+// const parent = document.getElementById('scene');
+// const parallax = new Parallax(parent, {
+//   limitX: 50,
+//   limitY: 50,  
+// });
  
  
-$('.msps-slider').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    speed: 1000,
-    fade: true,
-    cssEase: 'linear'
-});
+// $('.msps-slider').slick({
+//     infinite: true,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     dots: true,
+//     arrows: false,
+//     autoplay: true,
+//     autoplaySpeed: 5000,
+//     speed: 1000,
+//     fade: true,
+//     cssEase: 'linear'
+// });
 
 // toast options
 toastr.options = {

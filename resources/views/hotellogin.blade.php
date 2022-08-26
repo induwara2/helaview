@@ -22,13 +22,14 @@
             <div class="form login">
                 <span class="title">Login</span>
 
-                <form action="#">
+                <form action="/hotel-login" method="POST">
+                    @csrf
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required>
+                        <input type="text" name="email" placeholder="Enter your email" required>
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <input type="password" name="password" class="password" placeholder="Enter your password" required>
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
@@ -43,7 +44,7 @@
                     </div>
 
                     <div class="input-field button">
-                        <input type="button" value="Login">
+                        <button type="submit">Login</button>
                     </div>
                 </form>
 
@@ -58,34 +59,35 @@
             <div class="form signup">
                 <span class="title">Registration</span>
 
-                <form action="#">
+                <form action="/hotel-register" method="POST">
+                    @csrf
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your name" required>
+                        <input type="text" name="name" placeholder="Enter your name" required>
                         <i class="uil uil-user"></i>
                     </div>
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required>
+                        <input type="text" name="email" placeholder="Enter your email" required>
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Create a password" required>
+                        <input type="password" name="password" class="password" placeholder="Create a password" required>
                         <i class="uil uil-lock icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Confirm a password" required>
+                        <input type="password" name="password_confirmation" class="password" placeholder="Confirm a password" required>
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
-
+{{-- 
                     <div class="checkbox-text">
                         <div class="checkbox-content">
                             <input type="checkbox" id="termCon">
                             <label for="termCon" class="text">I accepted all terms and conditions</label>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div class="input-field button">
-                        <input type="button" value="Signup">
+                        <button type="submit">Submit</button>
                     </div>
                 </form>
 
@@ -259,7 +261,7 @@ body{
     margin-top: 35px;
 }
 
-.form .button input{
+.form .button{
     border: none;
     color: #fff;
     font-size: 17px;
@@ -271,7 +273,7 @@ body{
     transition: all 0.3s ease;
 }
 
-.button input:hover{
+.button:hover{
     background-color: #265df2;
 }
 

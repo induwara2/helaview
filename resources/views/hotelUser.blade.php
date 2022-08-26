@@ -92,7 +92,7 @@ $hide_footer=1;
 							<div class="my-profile">
 
 								<label>Your Name</label>
-								<input value="{{  Auth::user('web')->name }}" type="text">
+								<input value="" type="text">
 
 								<label>Phone</label>
 								<input value="(123) 123-456" type="text">
