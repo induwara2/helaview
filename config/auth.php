@@ -40,6 +40,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'hoteluser' => [
+            'driver' => 'session',
+            'provider' => 'hotelusers',
+        ],
     ],
 
     /*
@@ -63,6 +67,10 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+        'hotelusers' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\HotelUser::class,
         ],
 
         // 'users' => [
@@ -89,6 +97,12 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'hotelusers' => [
+            'provider' => 'hotelusers',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,

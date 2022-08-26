@@ -2,40 +2,40 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\HotelUser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 
-class UserController extends Controller
+class HotelController extends Controller
 {
     function register(){
         //validating the user input
         $attributes = request()->validate([
-            'email' => 'required|email|unique:users,email',
+            'email' => 'required|email|unique:hotel_users,email',
             'name' => 'required',
             'password' => 'required|confirmed|min:5|max:20',
         ]);
 
         $attributes['password'] = bcrypt($attributes['password']);
 
-        $user = User::create($attributes);
+        $user = HotelUser::create($attributes);
 
-        auth('web')->login($user);
+        auth('hoteluser')->login($user);
 
-        return redirect("/user")->with("success","User account created");
+        return redirect("/hoteluser")->with("success","User account created");
 
     }
 
     function login(){
         $attributes = request()->validate([
-            'email' => 'required|email|exists:users,email',
+            'email' => 'required|email|exists:hotel_users,email',
             'password' => 'required'
         ]);
 
-        if(auth('web')->attempt($attributes)){
-            return redirect('/user')->with('success','Welcome again');
+        if(auth('hoteluser')->attempt($attributes)){
+            return redirect('/hoteluser')->with('success','Welcome again');
         }
 
         throw ValidationException::withMessages([
@@ -49,24 +49,24 @@ class UserController extends Controller
             'password' => 'required|confirmed|min:5|max:20',
         ]);
 
-        $user = Auth::user('web');
+        $user = Auth::user('hoteluser');
         
        
         if(Hash::check( $attributes['old_password'],$user->password )){
             $attributes['password'] = bcrypt($attributes['password']);
             $user->password= $attributes['password'];
             $user->update();
-            return redirect("/user")->with('success','Password updated');
+            return redirect("/hoteluseruser")->with('success','Password updated');
         }else  {
-            return redirect("/user")->with('error','Old password error');
+            return redirect("/hoteluseruser")->with('error','Old password error');
         }      
         
     }
 
     function logout(){
 
-        auth('web')->logout();
+        auth('hoteluser')->logout();
 
-        return redirect("/")->with('success','Logged out !');
+        return redirect("/hotellogin")->with('success','Logged out !');
     }
 }

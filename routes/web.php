@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\HotelController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -45,7 +47,7 @@ Route::get('/listing/{category}/{layout}', [PageController::class,'viewListing']
 Route::post('/register', [UserController::class,'register']);
 
 //rourist login
-Route::post('/login', [UserController::class,'login']);
+Route::post('/login', [UserController::class,'login'])->name('login');
 
 //tourist logout
 Route::get('/logout', [UserController::class,'logout']);
@@ -62,14 +64,44 @@ Route::get('/logout', [UserController::class,'logout']);
 Route::get('/hotellogin', function () {
     return view('hotellogin');
 });
+
+//tourist register
+Route::post('/hotel-register', [HotelController::class,'register']);
+
+//rourist login
+Route::post('/hotel-login', [HotelController::class,'login'])->name('hotel.login');
+
+//tourist logout
+Route::get('/hotel-logout', [HotelController::class,'logout']);
+
+Route::get('/hoteluser', function () {
+    if(Auth::guard('hoteluser')->check()){
+        return view('hotelUser');
+    }else{
+        return redirect('/hotellogin');
+    }
+});
+
 Route::get('/about', function () {
     return view('about');
 });
+
+//check login 
+
 //user dashboard
 Route::get('/user', function () {
-    return view('user');
+    if(Auth::guard('web')->check()){
+        return view('user');
+    }else{
+        return redirect('/');
+    } 
 });
+
+Route::post('/update-password', [UserController::class,'changePassword']);
+
 //how it works
 Route::get('/how', function () {
     return view('how');
 });
+
+

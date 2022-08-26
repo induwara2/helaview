@@ -480,3 +480,22 @@
 <!-- Recent Blog Posts / End -->
 
 @endsection
+
+@section('script')
+
+<!-- Typed Script -->
+<script type="text/javascript" src="/scripts/typed.js"></script>
+<script>
+var typed = new Typed('.typed-words', {
+strings: ["Attractions"," Restaurants"," Hotels"],
+	typeSpeed: 80,
+	backSpeed: 80,
+	backDelay: 4000,
+	startDelay: 1000,
+	loop: true,
+	showCursor: true
+});
+
+</script>
+
+@endsection
