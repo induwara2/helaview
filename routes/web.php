@@ -104,4 +104,7 @@ Route::get('/how', function () {
     return view('how');
 });
 
-
+//single-listing
+Route::get('/single-listing', function () {
+    return view('single-listing');
+});

@@ -69,7 +69,7 @@ $hide_footer=1;
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row">				
 
 				<!-- Profile -->
 				<div class="col-lg-6 col-md-12">
